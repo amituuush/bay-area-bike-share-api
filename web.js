@@ -81,7 +81,7 @@ function stationToGeoJson(obj) {
 
 function minutely() {
     request({
-        uri: 'https://feeds.divvybikes.com/stations/stations.json',
+        uri: 'http://feeds.bayareabikeshare.com/stations/stations.json',
         json: true
     }, function(err, resp, body) {
         if (err) return;
@@ -93,7 +93,7 @@ function minutely() {
             stationsById[stations[i].id] = stations[i];
         }
 
-        var lastUpdate = new Date(body.executionTime + " UTC-05:00"),
+        var lastUpdate = new Date(body.executionTime + " UTC-08:00"),
             ago = new Date().getTime() - lastUpdate.getTime();
 
         console.log("Successfully loaded " + stations.length + " stations. Last update was " + ago + "ms ago");

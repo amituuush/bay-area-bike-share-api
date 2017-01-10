@@ -12,5 +12,8 @@
     "npm": "1.2.x"
   },
   "author": "Ian Dees <ian.dees@gmail.com>",
-  "license": "BSD"
+  "license": "BSD",
+  "scripts": {
+    "start": "node web.js"
+  }
 }
