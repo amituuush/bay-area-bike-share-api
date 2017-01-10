@@ -1,10 +1,12 @@
-Divvy API API
+Bay Area Bike Share API
 =============
 
 Inspired by [Tom MacWright](https://github.com/tmcw/wmataapiapi), this is a very
-simple API to get information about the [Divvy](http://divvybikes.com/) stations near you.
+simple API to get information about the Bay Area Bike Share stations near you. This is a fork of 
 
-I proxy the real (unpublished) [Divvy API](http://www.divvybikes.com/stations/json/)
+This is a fork of [https://github.com/iandees/divvyapiapi](https://github.com/iandees/divvyapiapi) with minimal changes to show Bay Area Bike share data.
+
+I proxy the real (unpublished) [Bay Area Bike Share](http://feeds.bayareabikeshare.com/stations/stations.json)
 and throw it into a KNN tree so you can make efficient nearby lookups based on a provided lat/lon.
 You can also filter results to only include stations with bikes or with available docks.
 
